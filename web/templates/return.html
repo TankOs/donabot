@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h1>Almost complete!</h1>
+  </div>
+
+  <p>To finish your donation, type this in your IRC client:</p>
+
+  <p class="alert alert-success">
+    <span class="text-muted">/msg {{bot_nickname}}</span>
+    DBP-{{payment_id}}
+  </p>
+
+  <p><strong>Thank you so much for your support!</strong></p>
+{% endblock %}
