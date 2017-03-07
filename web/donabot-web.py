@@ -34,4 +34,4 @@ def paypal_cancel():
 
 # Run
 debug_enabled = config.get("debug", False)
-app.run(debug=debug_enabled)
+app.run(debug=debug_enabled, host="0.0.0.0", port=5000)

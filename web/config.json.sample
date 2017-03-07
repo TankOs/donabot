@@ -1,5 +1,4 @@
 {
-  "secret": "",
   "paypal": {
     "mode": "sandbox",
     "client_id": "xxx",

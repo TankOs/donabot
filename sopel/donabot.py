@@ -10,15 +10,10 @@ Configuration:
   web_endpoint = <Flask site endpoint (host:port)>
 """
 
-from dateutil.parser import parse as parse_time
-from dateutil.relativedelta import relativedelta
 from paypalrestsdk import Api, Payment, ResourceNotFound
 import sopel.module
 
-from datetime import datetime, timezone
 from pprint import pprint
-
-EXTENSION_DELTA = relativedelta(weeks=1)
 
 def create_api(config):
   return Api({
